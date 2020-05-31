@@ -127,6 +127,18 @@ nav {
                 letter-spacing: 4.8px;
                 margin: 28px 0 31px;
             }
+
+            hr {
+                border: 0.5px solid #000;
+                width: 0;
+                transition: 0.5s;
+            }
+
+            &:hover {
+                hr {
+                    width:100%;
+                }
+            }
         }
     }
 

@@ -133,6 +133,17 @@ nav #box #social a:nth-child(2) {
   margin: 28px 0 31px;
 }
 
+#contant #news div hr {
+  border: 0.5px solid #000;
+  width: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#contant #news div:hover hr {
+  width: 100%;
+}
+
 #contant #product {
   text-align: center;
   position: relative;
