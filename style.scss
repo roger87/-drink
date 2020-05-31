@@ -9,16 +9,58 @@
     background-image: url(./img/banner.png);
     width: 1920px;
     height: 1280px;
+
+    display: grid;
+    align-items: center;
+
+    img {
+        margin: 0 auto;
+    }
 }
 
 nav {
     position: fixed;
+    width: 1920px;
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
 
     #box {
         margin: 59px auto 0;
         width: 1200px;
         display: grid;
         grid-template-columns: 204px 351px 398px 120px 110px;
+    }
+
+    #link {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: flex-end;
+
+        a {
+            font-size: 18px;
+            font-weight: 100;
+
+            &:nth-child(2) {
+                text-align: center;
+            }
+
+            &:nth-child(3) {
+                text-align: right;
+            }
+        }
+    }
+
+    #social {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: flex-end;
+
+        &:nth-child(2) {
+            text-align: right;
+        }
     }
 }
 

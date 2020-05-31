@@ -11,10 +11,25 @@
   background-image: url(./img/banner.png);
   width: 1920px;
   height: 1280px;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#banner img {
+  margin: 0 auto;
 }
 
 nav {
   position: fixed;
+  width: 1920px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
 }
 
 nav #box {
@@ -24,5 +39,42 @@ nav #box {
   display: grid;
   -ms-grid-columns: 204px 351px 398px 120px 110px;
       grid-template-columns: 204px 351px 398px 120px 110px;
+}
+
+nav #link {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+nav #link a {
+  font-size: 18px;
+  font-weight: 100;
+}
+
+nav #link a:nth-child(2) {
+  text-align: center;
+}
+
+nav #link a:nth-child(3) {
+  text-align: right;
+}
+
+nav #social {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+nav #social:nth-child(2) {
+  text-align: right;
 }
 /*# sourceMappingURL=style.css.map */
