@@ -1,7 +1,7 @@
 @charset "UTF-8";
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
   font-family: 微軟正黑體;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -41,7 +41,7 @@ nav #box {
       grid-template-columns: 204px 351px 398px 120px 110px;
 }
 
-nav #link {
+nav #box #link {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[3];
@@ -51,20 +51,20 @@ nav #link {
           align-items: flex-end;
 }
 
-nav #link a {
+nav #box #link a {
   font-size: 18px;
   font-weight: 100;
 }
 
-nav #link a:nth-child(2) {
+nav #box #link a:nth-child(2) {
   text-align: center;
 }
 
-nav #link a:nth-child(3) {
+nav #box #link a:nth-child(3) {
   text-align: right;
 }
 
-nav #social {
+nav #box #social {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];
@@ -74,21 +74,32 @@ nav #social {
           align-items: flex-end;
 }
 
-nav #social:nth-child(2) {
+nav #box #social a:nth-child(2) {
   text-align: right;
 }
 
 #contant {
   width: 1920px;
-  height: 500px;
   background-image: url(./img/paper.png);
+  border: 0.1px solid rgba(0, 0, 0, 0);
 }
 
 #contant h1 {
   text-align: center;
   margin-top: 46px;
+  margin-bottom: 60px;
   font-weight: 300;
-  letter-spacing: 9.6;
+  letter-spacing: 9.6px;
   font-size: 32px;
+}
+
+#contant #news {
+  width: 1200px;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
 }
 /*# sourceMappingURL=style.css.map */
