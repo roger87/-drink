@@ -30,6 +30,12 @@ nav {
 nav a {
   text-decoration: none;
   color: white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+nav a:hover {
+  color: #f5bb28;
 }
 
 nav #box {
@@ -103,12 +109,12 @@ nav #box #social a:nth-child(2) {
   grid-gap: 20px;
 }
 
-#contant #news div {
+#contant #news > div {
   background-color: white;
   padding: 40px 30px;
 }
 
-#contant #news div h3 {
+#contant #news > div h3 {
   color: #49aa45;
   font-size: 12px;
   font-weight: 300;
@@ -117,14 +123,14 @@ nav #box #social a:nth-child(2) {
   margin-bottom: 27px;
 }
 
-#contant #news div h4 {
+#contant #news > div h4 {
   font-size: 22px;
   font-weight: bold;
   letter-spacing: 5.5px;
   text-align: center;
 }
 
-#contant #news div p {
+#contant #news > div p {
   color: #333333;
   font-size: 16px;
   font-weight: 300;
@@ -133,15 +139,40 @@ nav #box #social a:nth-child(2) {
   margin: 28px 0 31px;
 }
 
-#contant #news div hr {
+#contant #news > div hr {
   border: 0.5px solid #000;
   width: 0;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
-#contant #news div:hover hr {
+#contant #news > div div {
+  position: relative;
+  font-size: 0;
+}
+
+#contant #news > div div::before {
+  content: "";
+  position: absolute;
   width: 100%;
+  height: 100%;
+  background: #000;
+  z-index: 1;
+  opacity: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#contant #news > div img {
+  width: 100%;
+}
+
+#contant #news > div:hover hr {
+  width: 100%;
+}
+
+#contant #news > div:hover div::before {
+  opacity: 0.5;
 }
 
 #contant #product {
@@ -170,7 +201,7 @@ nav #box #social a:nth-child(2) {
   margin: 30px 0 46px;
   font-size: 16px;
   font-weight: 300;
-  letter-spacing: 1.8px;
+  letter-spacing: 2.8px;
 }
 
 #contant #product div p {
@@ -197,7 +228,7 @@ nav #box #social a:nth-child(2) {
 }
 
 #contant #idea h2 {
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 300;
   letter-spacing: 7.2px;
 }
@@ -218,6 +249,13 @@ nav #box #social a:nth-child(2) {
   padding: 17px 67px;
   border: 2px solid #252525;
   color: #252525;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#contant #idea a:hover {
+  background: #252525;
+  color: white;
 }
 
 #contant footer {
