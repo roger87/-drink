@@ -77,4 +77,18 @@ nav #social {
 nav #social:nth-child(2) {
   text-align: right;
 }
+
+#contant {
+  width: 1920px;
+  height: 500px;
+  background-image: url(./img/paper.png);
+}
+
+#contant h1 {
+  text-align: center;
+  margin-top: 46px;
+  font-weight: 300;
+  letter-spacing: 9.6;
+  font-size: 32px;
+}
 /*# sourceMappingURL=style.css.map */
