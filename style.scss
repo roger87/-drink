@@ -10,3 +10,15 @@
     width: 1920px;
     height: 1280px;
 }
+
+nav {
+    position: fixed;
+
+    #box {
+        margin: 59px auto 0;
+        width: 1200px;
+        display: grid;
+        grid-template-columns: 204px 351px 398px 120px 110px;
+    }
+}
+
