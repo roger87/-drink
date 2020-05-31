@@ -112,7 +112,7 @@ nav #box #social a:nth-child(2) {
   color: #49aa45;
   font-size: 12px;
   font-weight: 300;
-  letter-spacing: 3.6;
+  letter-spacing: 3.6px;
   text-align: center;
   margin-bottom: 27px;
 }
@@ -120,6 +120,7 @@ nav #box #social a:nth-child(2) {
 #contant #news div h4 {
   font-size: 22px;
   font-weight: bold;
+  letter-spacing: 5.5px;
   text-align: center;
 }
 
@@ -130,5 +131,103 @@ nav #box #social a:nth-child(2) {
   line-height: 1.88;
   letter-spacing: 4.8px;
   margin: 28px 0 31px;
+}
+
+#contant #product {
+  text-align: center;
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+#contant #product div {
+  width: 225px;
+  position: absolute;
+  top: 73px;
+  right: 161px;
+}
+
+#contant #product div h2 {
+  color: #f5bb28;
+  font-size: 30px;
+  font-weight: 300;
+  letter-spacing: 7px;
+}
+
+#contant #product div h3 {
+  color: #cccccc;
+  margin: 30px 0 46px;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 2.8px;
+}
+
+#contant #product div p {
+  font-size: 20px;
+  line-height: 2.5;
+  letter-spacing: 5px;
+  text-align-last: left;
+}
+
+#contant #idea {
+  width: 1200px;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 620px auto;
+      grid-template-columns: 620px auto;
+  grid-gap: 20px;
+  padding-right: 20px;
+}
+
+#contant #idea img {
+  width: 100%;
+  border: 10px solid white;
+}
+
+#contant #idea h2 {
+  font-size: 22px;
+  font-weight: 300;
+  letter-spacing: 7.2px;
+}
+
+#contant #idea p {
+  margin: 51px 0;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 2.5;
+  letter-spacing: 6px;
+}
+
+#contant #idea a {
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 5.4px;
+  text-decoration: none;
+  padding: 17px 67px;
+  border: 2px solid #252525;
+  color: #252525;
+}
+
+#contant footer {
+  text-align: center;
+}
+
+#contant footer img {
+  margin: 126px 0 73px;
+}
+
+#contant footer p {
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 3.6px;
+}
+
+#contant footer p:nth-of-type(1) {
+  margin-bottom: 17px;
+}
+
+#contant footer p:nth-of-type(2) {
+  margin-bottom: 137px;
 }
 /*# sourceMappingURL=style.css.map */

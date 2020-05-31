@@ -1,5 +1,8 @@
 $green: #49aa45;
 $gray333: #333333;
+$grayCCC: #cccccc;
+$gold: #f5bb28;
+$black25: #252525;
 
 * {
     margin: 0;
@@ -88,6 +91,7 @@ nav {
         font-size: 32px;
     }
 
+    // 最新消息
     #news {
         width: 1200px;
         margin: 0 auto;
@@ -100,10 +104,10 @@ nav {
             padding: 40px 30px;
 
             h3 {
-                color:$green;
+                color: $green;
                 font-size: 12px;
                 font-weight: 300;
-                letter-spacing: 3.6;
+                letter-spacing: 3.6px;
                 text-align: center;
                 margin-bottom: 27px;
             }
@@ -111,9 +115,10 @@ nav {
             h4 {
                 font-size: 22px;
                 font-weight: bold;
+                letter-spacing: 5.5px;
                 text-align: center;
             }
-
+            
             p {
                 color: $gray333;
                 font-size: 16px;
@@ -121,6 +126,109 @@ nav {
                 line-height: 1.88;
                 letter-spacing: 4.8px;
                 margin: 28px 0 31px;
+            }
+        }
+    }
+
+    // 推薦飲品
+    #product {
+        text-align: center;
+        position: relative;
+        width: 1200px;
+        margin: 0 auto;
+
+        div {
+            width: 225px;
+            position: absolute;
+            top: 73px;
+            right: 161px;
+
+            h2 {
+                color: $gold;
+                font-size: 30px;
+                font-weight: 300;
+                letter-spacing: 7px;
+            }
+
+            h3 {
+                color: $grayCCC;
+                margin: 30px 0 46px;
+                font-size: 16px;
+                font-weight: 300;
+                letter-spacing: 2.8px;
+            }
+
+            p {
+                font-size: 20px;
+                line-height: 2.5;
+                letter-spacing: 5px;
+                text-align-last: left;
+            }
+        }
+    }
+
+    // 經營理念
+    #idea {
+        width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 620px auto;
+        grid-gap: 20px;
+        padding-right: 20px;
+
+        img {
+            width: 100%;
+            border: 10px solid white;
+        }
+
+        h2 {
+            font-size: 22px;
+            font-weight: 300;
+            letter-spacing: 7.2px;
+        }
+
+        p {
+            margin: 51px 0;
+            font-size: 20px;
+            font-weight: 300;
+            line-height: 2.5;
+            letter-spacing: 6px;
+        }
+
+        a {
+            font-size: 18px;
+            font-weight: 300;
+            letter-spacing: 5.4px;
+            text-decoration: none;
+            padding: 17px 67px;
+            border: 2px solid $black25;
+            color: $black25;
+        }
+    }
+
+    // 頁尾
+    footer {
+        text-align: center;
+
+        img {
+            margin: 126px 0 73px;
+        }
+
+        p {
+            font-size: 12px;
+            font-weight: 300;
+            letter-spacing: 3.6px;
+
+            // 子元素並指定類型
+            // footer 內有三個子元素，分別為：img，p1，p2
+            // p:nth-child(1) 會得到第一個子元素 img
+            // p:nth-of-type(1) 會得到第一個類型為 p 的子元素就是 p1
+            &:nth-of-type(1) {
+                margin-bottom: 17px;
+            }
+
+            &:nth-of-type(2) {
+                margin-bottom: 137px;
             }
         }
     }
