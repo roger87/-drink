@@ -102,4 +102,33 @@ nav #box #social a:nth-child(2) {
       grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
 }
+
+#contant #news div {
+  background-color: white;
+  padding: 40px 30px;
+}
+
+#contant #news div h3 {
+  color: #49aa45;
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 3.6;
+  text-align: center;
+  margin-bottom: 27px;
+}
+
+#contant #news div h4 {
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+}
+
+#contant #news div p {
+  color: #333333;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.88;
+  letter-spacing: 4.8px;
+  margin: 28px 0 31px;
+}
 /*# sourceMappingURL=style.css.map */

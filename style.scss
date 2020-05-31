@@ -94,5 +94,34 @@ nav {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 20px;
+
+        div {
+            background-color: white;
+            padding: 40px 30px;
+
+            h3 {
+                color:$green;
+                font-size: 12px;
+                font-weight: 300;
+                letter-spacing: 3.6;
+                text-align: center;
+                margin-bottom: 27px;
+            }
+
+            h4 {
+                font-size: 22px;
+                font-weight: bold;
+                text-align: center;
+            }
+
+            p {
+                color: $gray333;
+                font-size: 16px;
+                font-weight: 300;
+                line-height: 1.88;
+                letter-spacing: 4.8px;
+                margin: 28px 0 31px;
+            }
+        }
     }
 }
